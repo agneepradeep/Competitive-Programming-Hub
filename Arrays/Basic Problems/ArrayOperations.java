@@ -59,7 +59,7 @@ public ArrayOperations {
         return -1;
     } 
 
-    static int binarySearch(int arr[], int low, int high, int item) {
+    public static int binarySearch(int arr[], int low, int high, int item) {
         
         if (low > high) return -1;
         int mid = (low+high)/2;
@@ -69,6 +69,28 @@ public ArrayOperations {
             return binarySearch(arr,low,mid-1,item);
         } else {
             return 1;
+        }
+    }
+
+    public static void rightRotate(int arr[], int k) {
+        int temp;
+        for (int i = 0; i < k; i++) {
+            for (int j = arr.length-1; j > 0; j--) {
+                temp = arr[j-1];
+                arr[j-1] = arr[j];
+                arr[j] = temp;
+            }
+        }
+    }
+
+    public static void leftRotate (int arr[], int k ) {
+        int temp;
+        for (int i = 0; i < k; i++) {
+            for (int j = 0; j < arr.length-1; j++) {
+                temp = arr[j+1];
+                arr[j+1] = arr[j];
+                arr[j] = temp;
+            }
         }
     }
 }
