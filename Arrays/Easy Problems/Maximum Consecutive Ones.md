@@ -18,13 +18,6 @@ Output: 2
 Explanation: There are two consecutive 1's in the array. 
 ```
 ## Approach
-Here’s a step-by-step approach to solve the problem described by the pseudocode, where the goal is to find the maximum number of consecutive `1`s in a binary array:
-
-### Problem Understanding:
-You are given an array of binary numbers (consisting of only `0`s and `1`s). You need to find the length of the longest contiguous segment where the array contains only `1`s.
-
-### Approach:
-
 1. **Initialize Counters:**
    - `maxCount`: This will store the maximum number of consecutive `1`s found so far. Initialize it to `0`.
    - `tempCount`: This will keep track of the current streak of consecutive `1`s. Initialize it to `0`.
